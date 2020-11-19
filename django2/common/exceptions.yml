@@ -1,0 +1,16 @@
+
+1001: "authentication error"
+1002: "accout or password error when user login"
+1003: "params schema error"
+1004: "id schema error"
+1005: "entity not found"
+1006: "entity duplication error"
+1007: "teacher has been deleted"
+1008: "class has been deleted"
+1009: "student has been deleted"
+1010: "course has been deleted"
+1100: "Unknow server error"
+1101: "DB error when insert data"
+1102: "DB error when update data"
+
+
