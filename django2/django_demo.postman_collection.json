@@ -1,0 +1,765 @@
+{
+	"info": {
+		"_postman_id": "eef26b9a-1f32-4720-bea9-e20aed35af0a",
+		"name": "django_demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add_classes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"class five\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/classes",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"classes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit_classes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"class two\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/classes/G2rynHFRQeubogDPE674kY",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"classes",
+						"G2rynHFRQeubogDPE674kY"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_classes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/classes/G2rynHFRQeubogDPE674kY",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"classes",
+						"G2rynHFRQeubogDPE674kY"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_classes",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/classes/G2rynHFRQeubogDPE674kY",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"classes",
+						"G2rynHFRQeubogDPE674kY"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list_classes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAyNTY5ODU5LCJqdGkiOiI3MmZkZjM1MDJiMjc0N2ZmYThkYWQ5MjJiMThmMTk3OCIsInVzZXJfaWQiOiJTZXdlUTY3VER0SkVQQ2I5eUZvdGVMIn0.ukKZFyCEhAb19v3liH_UymleHnCgI29QLoo29piIkkA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/classes?offset=0&count=10",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"classes"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "count",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_teacher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"teacher two\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/teachers",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"teachers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list_teacher",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/teachers",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"teachers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit_teacher",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"teacher one change\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/teachers/dsPBjeALvxGmxrLKR5Wng3",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"teachers",
+						"dsPBjeALvxGmxrLKR5Wng3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_teacher",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/teachers/dsPBjeALvxGmxrLKR5Wng3",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"teachers",
+						"dsPBjeALvxGmxrLKR5Wng3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_teacher",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/teachers/dsPBjeALvxGmxrLKR5Wng3",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"teachers",
+						"dsPBjeALvxGmxrLKR5Wng3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Philosophy\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/courses",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list_course",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/courses",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_course",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/courses/SqHXCyE2Y57rHdfDd2BLTN",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"courses",
+						"SqHXCyE2Y57rHdfDd2BLTN"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_course",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/courses/SqHXCyE2Y57rHdfDd2BLTN",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"courses",
+						"SqHXCyE2Y57rHdfDd2BLTN"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit_course",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"name modify\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/courses/WotX9LUCuSwYQW6e2oyAG4",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"courses",
+						"WotX9LUCuSwYQW6e2oyAG4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Ubunt\",\r\n    \"phone\":\"65985623\",\r\n    \"teacher_id\":\"9m8XHwyrpfvkjFjShu9kcH\",\r\n    \"class_id\": \"YzoiS6HQqGgJHLz6v9tVjV\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/students",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit_student",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"bob-change\",\r\n    \"phone\":\"3689562369\",\r\n    \"teacher_id\":\"9m8XHwyrpfvkjFjShu9kcH\",\r\n    \"class_id\": \"YzoiS6HQqGgJHLz6v9tVjV\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/students/jvqb8JnKtMT3VdvjTeVrrm",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"students",
+						"jvqb8JnKtMT3VdvjTeVrrm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/students/TUidZhG5wbJ8n6MGeuH6zj",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"students",
+						"TUidZhG5wbJ8n6MGeuH6zj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/students/jvqb8JnKtMT3VdvjTeVrrm",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"students",
+						"jvqb8JnKtMT3VdvjTeVrrm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list_student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/students?name=Ali&phone=659&offset=3&count=5",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"students"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Ali"
+						},
+						{
+							"key": "phone",
+							"value": "659"
+						},
+						{
+							"key": "offset",
+							"value": "3"
+						},
+						{
+							"key": "count",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_score",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"student_id\":\"TUidZhG5wbJ8n6MGeuH6zj\",\r\n    \"course_id\":\"KvUQngQvCLrnoDvcurMPo5\",\r\n    \"score\":89\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/scores",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"scores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list_score",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/scores",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"scores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_score",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/scores/WuN3nzvF5ps9YGVMuW4H9g",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"scores",
+						"WuN3nzvF5ps9YGVMuW4H9g"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_score",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/scores/WuN3nzvF5ps9YGVMuW4H9g",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"scores",
+						"WuN3nzvF5ps9YGVMuW4H9g"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit_score",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"score\": 99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/scores/ibZDGj6yrEkWhtuu7cPqXv",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"scores",
+						"ibZDGj6yrEkWhtuu7cPqXv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"zosionlee\",\r\n    \"password\":12345678\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/v1/api/token",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"v1",
+						"api",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refresh_token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAyNTY4MjkxLCJqdGkiOiIyZTM0NDgxN2Q4NmY0NTRhOGMxNzgwM2QwMGU3Y2YyOCIsInVzZXJfaWQiOiJTZXdlUTY3VER0SkVQQ2I5eUZvdGVMIn0.ha3NXlJVs_4MP3WNmYS1vEg2nOJi6PHLoF0OLQRNIYI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"refresh\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYwMjY1NDM5MSwianRpIjoiNDYwYjNiZWFjODZjNGQyMTk2OWRmZjc1ZGE1YWExYjkiLCJ1c2VyX2lkIjoiU2V3ZVE2N1REdEpFUENiOXlGb3RlTCJ9.hIZfGbKa25xhI5_MeMvkEZQIHPAODQ01aZ5NFtSGOHo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/v1/api/token/refresh",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"v1",
+						"api",
+						"token",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "token_verify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYaaaaZXNzIiwiZXhwIjoxNjAyNTcwNTY2LCJqdGkiOiJjZmMyZGIwZWYyYjM0OWExYjVhODk5Y2RjNWMwMjdkZiIsInVzZXJfaWQiOiJTZXdlUTY3VER0SkVQQ2I5eUZvdGVMIn0.CJRw36u2t2We5IywrbNxtYqaG0ZabgAUaOdLjO657OM\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/v1/api/token/verify",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"v1",
+						"api",
+						"token",
+						"verify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"zosionlee\",\r\n    \"password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{demo_host}}{{demo_port}}/v1/api/login",
+					"host": [
+						"{{demo_host}}{{demo_port}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

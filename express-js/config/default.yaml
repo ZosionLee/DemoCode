@@ -1,0 +1,25 @@
+
+# application
+application/name: console
+application/port: 9000
+
+# redis
+cache/redis/database: 1
+cache/redis/host: 127.0.0.1
+#cache/redis/host: noc-caches.dev-cn.internal.merckuwifi.org
+cache/redis/password: ''
+cache/redis/port: 6379
+cache/redis/user: ''
+ttl/cache/session: 360000
+
+# mysql
+db/mysql/database: testdemo
+db/mysql/host: noc-db-mysql.dev-cn.internal.merckuwifi.org
+db/mysql/user: root
+db/mysql/password: 'pabb'
+db/mysql/port: 3306
+db/debug: True
+
+# log
+log/dir: ./logs
+log/level: DEBUG
