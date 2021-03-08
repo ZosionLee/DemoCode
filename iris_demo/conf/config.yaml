@@ -1,0 +1,11 @@
+redis:
+  redis/host: "127.0.0.1"
+  redis/port: "6379"
+  redis/database: 1
+  redis/password: ''
+mysql:
+  mysql/host: "127.0.0.1"
+  mysql/port: "3306"
+  mysql/database: iris_demo
+  mysql/username: root
+  mysql/password: '123456'
